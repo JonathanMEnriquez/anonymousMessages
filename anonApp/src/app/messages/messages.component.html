@@ -1,0 +1,12 @@
+<div id="form">
+  <form (submit)="newMessage()">
+    <p>Note: <input type="text" name="content" [(ngModel)]="message.content" class="noteInput"></p>
+    <input type="submit" value="Add Note">
+  </form>
+</div>
+<div id="messageBoard" *ngIf="allMessages != undefined" >
+  <div *ngFor="let message of allMessages" class="singleMessage">
+    <p class="created">Noted on: {{message.createdAt | date:'medium'}}</p>
+    <p class="messageTxt">{{message.content}}</p>
+  </div>
+</div>

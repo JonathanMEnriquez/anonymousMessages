@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container{
+    background-color: lightgray;
+    height: 960px;
+}
+
+#container h1{
+    padding: 25px;
+}
